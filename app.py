@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 def load_model():
-  generator = pipeline("text-generation", model="EleutherAI/gpt-neo-1.3B")
+  generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M")
   return generator
 st.image("feenix-lab-logo_use-on-black.png")
 st.title("Text Generation")
